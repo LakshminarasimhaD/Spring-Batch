@@ -8,13 +8,20 @@ This project demonstrates a Spring Batch application that imports employee data 
 --------------
 
 ✅ Read employee data from a CSV file using FlatFileItemReader
+
 ✅ Validate records:
+
     ->Email format validation
     ->Age must be 18 or older
+    
 ✅ Transform raw CSV data (EmployeeCsv) into entity (Employee)
+
 ✅ Store valid employees in the database using Spring Data JPA
+
 ✅ Send welcome emails to employees after saving
+
 ✅ Skip invalid records gracefully (no failure for bad rows)
+
 ✅ Chunk-oriented processing (processes data in batches of 100 records for performance)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
