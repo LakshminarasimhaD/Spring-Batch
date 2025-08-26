@@ -11,7 +11,8 @@ This project demonstrates a Spring Batch application that imports employee data 
 
 ✅ Validate records:
 
-    ->Email format validation
+    ->Email format validation,
+    
     ->Age must be 18 or older
     
 ✅ Transform raw CSV data (EmployeeCsv) into entity (Employee)
@@ -30,10 +31,15 @@ This project demonstrates a Spring Batch application that imports employee data 
 ----------------------
 
 BatchConfig → Configures job, step, reader, processor, and writer.
+
 EmployeeProcessor → Validates & transforms CSV data into Employee.
+
 EmployeeWriter → Saves employees into DB & triggers email notifications.
+
 EmailService → Sends emails using JavaMailSender.
+
 EmployeeCsv DTO → Represents raw CSV row.
+
 Employee Entity → Mapped entity stored in DB.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -42,11 +48,17 @@ Employee Entity → Mapped entity stored in DB.
 ------------------------
 
 Java 21 / 17
+
 Spring Boot
+
 Spring Batch
+
 Spring Data JPA
+
 Spring Mail (JavaMailSender)
+
 MySQL / H2
+
 Maven
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -55,17 +67,24 @@ Maven
 ----------------
 
 Place the employees.csv file in the configured location.
+
 Run the Spring Boot application.
+
 Batch job (importEmployeeJob) starts and executes the step:
+
 Read → Process → Write.
+
 Valid employees get saved into the DB.
+
 Welcome emails are sent to each valid employee.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 📊 Sample CSV Format
 -----------------------
 employeeId,name,dob,state,departmentId,designation,salary,email
+
 EMP00001,John Doe,15-06-1990,Karnataka,D1,Developer,55000,john.doe@example.com
+
 EMP00002,Jane Smith,01-12-2005,Delhi,D2,Analyst,45000,jane.smith@invalid
 
 O/P
