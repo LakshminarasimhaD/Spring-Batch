@@ -83,9 +83,9 @@ Welcome emails are sent to each valid employee.
 -----------------------
 employeeId,name,dob,state,departmentId,designation,salary,email
 
-EMP00001,John Doe,15-06-1990,Karnataka,D1,Developer,55000,john.doe@example.com
+EMP00001,Rama Chandran,15-06-1990,Karnataka,D1,Developer,55000,ram.chandran@example.com
 
-EMP00002,Jane Smith,01-12-2005,Delhi,D2,Analyst,45000,jane.smith@invalid
+EMP00002,Smitha,01-12-2005,Delhi,D2,Analyst,45000,smith@invalid
 
 O/P
 
